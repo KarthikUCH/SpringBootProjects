@@ -3,10 +3,7 @@ package com.raju.employees.controller;
 import com.raju.employees.database.model.Employee;
 import com.raju.employees.database.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +20,9 @@ public class EmployeeController {
         return employeeRepository.findAll();
     }
 
+    @PostMapping("employees")
+    public Employee saveEmployee(@RequestBody Employee employee){
+        return employeeRepository.save(employee);
+    }
 
 }
