@@ -10,4 +10,5 @@
 ## JWT Detailed Reference
 
 [What is JWT?](https://www.javainuse.com/spring/jwt)
+
 [Spring Boot Security + JWT integration](https://www.javainuse.com/spring/boot-jwt)
