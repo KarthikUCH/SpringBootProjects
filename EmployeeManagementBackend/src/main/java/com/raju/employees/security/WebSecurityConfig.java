@@ -19,6 +19,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import javax.sql.DataSource;
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
@@ -54,7 +55,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     CorsConfigurationSource corsConfigurationSource()
     {
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**",new CorsConfiguration().applyPermitDefaultValues());
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setExposedHeaders(Arrays.asList("Access-Control-Allow-Headers", "Authorization, x-xsrf-token, Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, " +
+                "Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"));
+        source.registerCorsConfiguration("/**",configuration.applyPermitDefaultValues());
+
         return source;
     }
 
