@@ -12,3 +12,7 @@
 [What is JWT?](https://www.javainuse.com/spring/jwt)
 
 [Spring Boot Security + JWT integration](https://www.javainuse.com/spring/boot-jwt)
+
+## Additional JWT Authentication Example Reference
+[Reactjs JWT Authentication](https://loizenai.com/reactjs-jwt-authentication-example/#springoot-jwt-token-authentication-rsetapis-implementation)
+[SpringBoot Token Based Authentication Example](https://loizenai.com/spring-boot-security-jwt-token-bsed-authentication-example-mysql-spring-jpa-restapis/)
