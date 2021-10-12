@@ -23,3 +23,6 @@
 [Testing Spring MVC Web Controllers with Spring Boot and @WebMvcTest](https://reflectoring.io/spring-boot-web-controller-test/)
 [Testing JPA Queries with Spring Boot and @DataJpaTest](https://reflectoring.io/spring-boot-data-jpa-test/)
 [Integration Tests with @SpringBootTest](https://reflectoring.io/spring-boot-test/)
+
+## Exception Handling 
+[Exception Handling in Spring Boot](https://reflectoring.io/spring-boot-exception-handling/)
